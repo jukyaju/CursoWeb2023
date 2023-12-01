@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio position</title>
+    <style>
+        #container{
+            border: 6px solid black;
+            width: 70%;
+            height: 600px;
+            margin:30px auto;
+            position:relative;
+            box-shadow: 15px 7px gray;
+        
+        }
+        section{
+            width: 120px;
+            height: 120px;
+            border:2px solid black;
+            border-radius: 50%;
+            position:absolute;
+            background-image: linear-gradient(to left, gray, lightgray);
+            box-shadow: 4px 4px gray;
+        }
+
+        .a{
+            top: 25px;
+            left: 25px;
+        }
+        .b{
+            top:25px;
+            right:25px;
+        }
+        .c {
+            left: 25px;
+            bottom: 25px;
+        }
+        .d{
+            bottom:25px;
+            right:25px;
+        }
+        article{
+            height: 250px;
+            width: 250px;
+            border:2px solid black;
+            position:absolute;
+            left: calc(50% - 125px);
+            top:calc(50% - 125px);
+            background-image: linear-gradient(to right, orange, red);
+            box-shadow: 7px 7px gray;
+        }
+        article div {
+            width: 40px;
+            height: 40px;
+            border-radius:50%;
+            background-image: linear-gradient(to right, lightblue, blue);
+            position:absolute;
+        }
+        .e1{
+            top:20px;
+            left:20px;
+        }
+
+        .e2{
+            top:20px;
+            right: 20px;
+        }
+        .e3{
+            bottom:20px;
+            left:20px;
+        }
+        .e4{
+            bottom: 20px;
+            right:20px;
+        }
+
+        .e5{
+            left: calc(50% - 20px);
+            top: calc(50% - 20px);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="container">
+        <section class="a"></section>
+        <section class="b"></section>
+        <section class="c"></section>
+        <section class="d"></section>
+        <article>
+            <div class="e1"></div>
+            <div class="e2"></div>
+            <div class="e3"></div>
+            <div class="e4"></div>
+            <div class="e5"></div>
+        </article>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        section{
+            margin-top:50px;
+        }
+        aside{
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            display:inline-block;
+            border:2px solid gray;
+            border-radius: 8px;
+        }
+        .dado2,.dado5{
+            margin: 0 150px 0 150px;
+            margin: 0 150px;
+        }
+        aside div{
+            background-color: black;
+            width:30px;
+            height: 30px;
+            border-radius: 50%;
+            
+        }
+        .punto-central{
+            margin: 60px auto;
+        }
+        .punto-sup-izq {
+            margin: 10px;
+        }
+        .punto-inf-dcha{
+            margin-top: 70px; 
+            margin-left: 110px; 
+        }
+        .dado3 .punto-central{
+            margin-top: 20px;
+        }
+        .dado3 .punto-inf-dcha{
+            margin-top: -40px;
+            
+        }
+        .dado4 div, .dado5 div, .dado6 div{
+            margin:0;
+        }
+        .dado4 .punto-sup-izq{
+            margin-left: 10px;
+            margin-top:10px;
+        }
+        .dado4 .punto-sup-dcha{
+            margin-left: 110px;
+            margin-top: -30px;
+        }
+        .dado4 .punto-inf-izq{
+            margin-left: 10px;
+            margin-top: 70px;
+        }
+        .dado4 .punto-inf-dcha{
+            margin-left:110px;
+            margin-top: -30px;
+        }
+        .dado5 .punto-sup-izq{
+            margin-left: 10px;
+            margin-top:10px;
+        }
+        .dado5 .punto-sup-dcha{
+            margin-left: 110px;
+            margin-top: -30px;
+        }
+        .dado5 .punto-inf-izq{
+            margin-left: 10px;
+            margin-top: 70px;
+        }
+        .dado5 .punto-inf-dcha{
+            margin-left:110px;
+            margin-top: -30px;
+        }
+        .dado5 .punto-central{
+            margin-left:60px;
+            margin-top:-80px;
+        }
+        .dado6 .punto-sup-izq{
+            margin-left: 10px;
+            margin-top:10px;
+        }
+        .dado6 .punto-sup-dcha{
+            margin-left: 110px;
+            margin-top: -30px;
+        }
+        .dado6 .punto-inf-izq{
+            margin-left: 10px;
+            margin-top: 70px;
+        }
+        .dado6 .punto-inf-dcha{
+            margin-left:110px;
+            margin-top: -30px;
+        }
+        .dado6 .punto-central-izq{
+            margin-left:10px;
+            margin-top:-80px;
+        }
+        .dado6 .punto-central-dcha{
+            margin-left:110px;
+            margin-top:-30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Las caras de los dados</h1>
+    <main>
+        <section>
+            <aside class="dado1"><div class="punto-central"></div></aside>
+            <aside class="dado2">
+                <div class="punto-sup-izq"></div>
+                <div class="punto-inf-dcha"></div>
+            </aside>
+            <aside class="dado3">
+                <div class="punto-sup-izq"></div>
+                <div class="punto-central"></div>
+                <div class="punto-inf-dcha"></div>
+            </aside>
+        </section>
+        <section>
+            <aside class="dado4">
+                <div class="punto-sup-izq"></div>
+                <div class="punto-sup-dcha"></div>
+                <div class="punto-inf-izq"></div>
+                <div class="punto-inf-dcha"></div>
+            
+            </aside>
+            
+            <aside class="dado5">
+                <div class="punto-sup-izq"></div>
+                <div class="punto-sup-dcha"></div>
+                <div class="punto-inf-izq"></div>
+                <div class="punto-inf-dcha"></div>
+                <div class="punto-central"></div>
+            </aside>
+            <aside class="dado6">
+                <div class="punto-sup-izq"></div>
+                <div class="punto-sup-dcha"></div>
+                <div class="punto-inf-izq"></div>
+                <div class="punto-inf-dcha"></div>
+                <div class="punto-central-izq"></div>
+                <div class="punto-central-dcha"></div>
+            </aside>
+        </section>
+    </main>
+    <p>Las caras opuestas de los dados siempre suman 7</p>
+</body>
+</html>

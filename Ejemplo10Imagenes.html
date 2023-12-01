@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+    <style>
+        p{
+            text-align: center;
+        }
+        img{
+            width: 50%;
+            text-align: center;
+        }
+        #img1{
+            border:10px solid black;
+            filter:grayscale(0.5);
+            opacity: 0.95;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Imágenes</h1>
+    <h2>Imágenes en la misma carpeta que este archivo</h2>
+    <p>
+        <img id="img1" src="Imagen2.jpg" alt="Imagen de una ola">
+        <br>
+        <img src="C:\Users\julian\Desktop\CursoWeb2023\Ejemplos\Imagen1.jpg" alt="Imagen 1">
+    </p>
+
+    <h2>Imágenes en un nivel inferior</h2>
+    <p>
+        <img src="./img/img1.jpg" alt="Imagen 1">
+        <img src="img/logos/img1.png" alt="Logo">
+    </p>
+    <h2>Imágenes en un nivel superior</h2>
+    <p>
+        <img src="../Imagenes/imagen3.jpg" alt="Imagen 5"><br>
+        <img src="../../../Imagenes/'Capturas de pantalla'/captura.png" alt="Captura de pantalla">
+    </p>
+    <h3>Imágenes en un servidor</h3>
+    <p>
+        <img src="https://picsum.photos/600/300" alt="Imagen aleatoria">
+        <img src="https://picsum.photos/id/30/600/300" alt="Taza con sello de Cuba">
+        <img src="https://picsum.photos/id/30/600/300?grayscale" alt="Taza con sello de Cuba">
+        <img src="https://picsum.photos/id/30/600/300?blur=3" alt="Taza con sello de Cuba">
+        <img src="https://picsum.photos/id/30/600/300?grayscale&blur=3" alt="Taza con sello de Cuba">
+    </p>
+
+</body>
+</html>

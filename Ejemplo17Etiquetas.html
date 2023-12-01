@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML</title>
+    <style>
+        body{
+           background-color:yellow !important;
+        }
+        #cuerpo{
+            background-color: orange;
+        }
+        .clase1{
+            background-color: brown;
+        }
+        #celda{
+            font-size: 1em;
+        }
+        tr .clase3 {
+            font-size:0.3em;
+        }
+        .clase3 {
+            font-size:4em;
+        }
+        table tr .clase2{
+            font-size:4em;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="micss.css">
+<script>
+       // document.getElementsByTagName("body")[0].style.backgroundColor="yellow";
+</script>     
+</head>
+
+<body id="cuerpo" class="clase1" style="background-color: blueviolet;">
+    <table><!--  Etiqueta para hacer una tabla. -->
+        <thead>
+            <tr>
+                <th id="celda" class="clase3 clase2">Etiqueta</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Enlace o hipervínculo</td>
+                <td><a href="http://julian.othervision.es">julian.othervision.es</a></td>
+                <td><a href="https://www.w3schools.com/tags/tag_a.asp">Enlace</a></td>
+            </tr>
+        </tbody>
+        <caption>Etiquetas HTML by &copy;Alumnos</caption>
+    </table>
+
+
+</body>
+</html>

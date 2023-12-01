@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        body{
+            background-image: url(platanos.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*Fijar la imagen de fondo*/
+            background-attachment: scroll; /*Por defecto*/
+        }
+
+        main{
+            width: 1000px;
+            height: 1600px;
+            border: 40px solid rgba(147, 198, 5, 0.3);
+            margin: 40px auto;
+            padding:2cm;
+            background-image: url(fresas.jpg);
+            background-repeat: repeat-x; /* Repite en horizontal */
+            background-repeat: repeat-y; /* Repite en vertical */
+            background-repeat: repeat; /*Por defecto, repite en vertical y horizontal */
+            background-repeat: no-repeat; /*Solo muestra uno, no repite) */
+           /* background-position: center 30px; /*Posicionar la imagen de fondo*/
+            background-origin: content-box; /*El origen del background es el contenido*/
+            background-origin:border-box; /*El origen del background es el borde*/
+            background-origin:padding-box; /*Por defecto*/
+            background-size: 300px 300px;
+            background-size: 100% 100%;
+            background-size:contain;
+            background-size: cover;
+            background-origin: border-box;
+        }
+
+        section{
+            width:70%;
+            margin:30px auto;
+            border: 40px dotted gray;
+            padding: 50px;
+            background-color: orange;
+            background-clip: border-box; /*Por defecto */
+            /* background-clip: padding-box;
+            background-clip: content-box; */
+        }
+
+        article{
+            border:40px solid rgba(0,255,0,0.5);
+            background-color: black;
+            color:white;
+            width:60%;
+            margin:20px auto;
+            background-clip: padding-box;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <br><br><br><br><br><br><br><br><br><br>
+        <img src="Imagen1.jpg" alt="Imagen" width="400" height="400">
+    </main>
+
+    <section>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem hic quia nostrum mollitia beatae accusamus nihil deleniti quisquam eligendi aliquid, numquam eum corporis, qui officia iure ab culpa debitis sunt.</div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <article>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, iure quia. Officiis quam delectus possimus dolorum ullam, eveniet libero dolores, sed laborum iste quos iusto vel sit nulla quo impedit.
+    </article>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
