@@ -1,0 +1,47 @@
+ /*Común para todos los elementos, si no se modifican en las medias querys*/
+ body{
+    padding:2em;
+    text-align: justify;
+ }
+ h1{
+    text-align: center;
+ }
+  
+ 
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .imagenes1{
+        display:none;
+    }
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .imagenes1{
+        width:25%;
+        float:left;
+        margin:0 1.5em 1.5em 0;
+        
+    }
+    
+}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .imagenes1{
+        visibility: hidden;
+    }
+}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .imagenes1{
+        width:45%;
+        visibility: visible;
+    }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    
+ } 
