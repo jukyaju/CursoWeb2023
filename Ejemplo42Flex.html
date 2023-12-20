@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+    <style>
+        img{
+            width:250px;
+        }
+
+        main{
+            display:flex;
+            flex-direction: row; /*Por defecto*/
+            flex-wrap: wrap; /*Se adapta a la pantalla*/
+        }
+        section{
+            display:flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+        }
+        article{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        footer{
+            display:flex;
+            flex-direction: column-reverse;
+        }
+        aside{
+            display:flex;
+            flex-flow: row-reverse wrap; /*Propiedad direction y wrap en una sola*/
+        }
+        main:nth-child(1) img:nth-child(1){
+            order: 2;
+        }
+        main:nth-child(1) img:nth-child(7){
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    Flex-direction: row  Flex-wrap: wrap
+    <main>
+        <img src="https://picsum.photos/id/25/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/28/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/29/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/64/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/65/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/237/500/300" >
+        <img src="https://picsum.photos/id/169/500/300" >
+        <img src="https://picsum.photos/id/200/500/300" >
+    </main>
+    Flex-direction: row-reverse  Flex-wrap: wrap-reverse
+    <section>
+        <img src="https://picsum.photos/id/25/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/28/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/29/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/64/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/65/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/237/500/300" >
+        <img src="https://picsum.photos/id/169/500/300" >
+        <img src="https://picsum.photos/id/200/500/300" >
+    </section>
+    Flex-direction: column  Flex-wrap: wrap
+    <article>
+        <img src="https://picsum.photos/id/25/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/28/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/29/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/64/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/65/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/237/500/300" >
+        <img src="https://picsum.photos/id/169/500/300" >
+        <img src="https://picsum.photos/id/200/500/300" >
+    </article>
+    Flex-direction: column-reverse  Flex-wrap: wrap
+    <footer>
+        <img src="https://picsum.photos/id/25/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/28/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/29/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/64/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/65/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/237/500/300" >
+        <img src="https://picsum.photos/id/169/500/300" >
+        <img src="https://picsum.photos/id/200/500/300" >
+    </footer>
+    Flex-flow: row-reverse wrap
+    <aside>
+        <img src="https://picsum.photos/id/25/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/28/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/29/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/64/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/65/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/237/500/300" >
+        <img src="https://picsum.photos/id/169/500/300" >
+        <img src="https://picsum.photos/id/200/500/300" >
+    </aside>
+
+</body>
+</html>

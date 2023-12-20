@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child i+i {
+            color: blue;
+        }
+
+        div:lang(en) {
+            color: fuchsia;
+        }
+
+        q:lang(es) {
+            quotes: '"' '"';
+        }
+
+        div:empty {
+           border-radius: 50%;
+           width:40px;
+           height: 40px;
+           background-color: orange;
+        }
+        p:first-of-type{
+            background-color: transparent;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <div></div>
+        <div> </div>
+        <div></div>
+    </main>
+
+    <p>I am a <i>strong</i> person. <b>I</b> am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+    <div>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p></p>
+    </div>
+    <main>
+        <div lang="en"> Text in English</div>
+        <div lang="ga"> Texto a galego</div>
+        <div lang="es"><q>Esto es una cita en español</q></div>
+    </main>
+    
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+    <style>
+        /*
+        header #id1 {
+            background-color: yellow;
+        }
+
+        p{ 
+            background-color: gray;
+        } 
+        
+        #id1{
+            background-color: chocolate !important;
+        }
+
+        body .p3{
+            font-size: 2em;
+            background-color:blue !important; 
+        }
+        .especial{
+            font-size: 4em;
+            color:orange;
+            background-color: chartreuse;
+        }
+        main,section{
+            font-family: monospace;
+        }
+        *{
+            margin:0 auto;
+        }
+
+        aside > p {
+            background-color: white;
+        }
+        
+        header.especial p{  /*Todas las p que sean de la clase especial*/
+          /* background-color: orange;
+        }
+        */
+
+        header ~ p{
+            background-color: blue;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/micss.css">
+</head>
+<body>
+    <header class="cabeza ">
+        <div>Soy un div dentro del header</div>
+      <!--  <p id="id1" class="especial p3" style="background-color: fuchsia !important;">Soy una p dentro del header y soy de la clase especial y la clase p3</p>
+      -->  <p class="especial p3">Soy una p dentro del header y soy de la clase especial y la clase p3</p>
+    </header>
+    <p>Hola</p>
+    <main>Soy el main</main>
+    <section>Soy una sección</section>
+    <aside>
+        <p>Manolo</p>
+        <header class="especial">
+            Soy un header dentro del aside
+            <div class="especial p3">Soy una p dentro de ...</div>
+        </header>
+        <p>Soy una p dentro del aside</p>
+        <section>Seccion</section>
+        <p>Soy otra p dentro del aside</p>
+    </aside>
+    <div>
+        <p class="p3">Soy una p dentro del div y soy de la clase p3</p>
+        <p>Soy otra p dentro del div</p>
+    </div>
+    <footer>
+        <p class="especial">Soy una p dentro del footer y de la clase especial</p>
+        <div>Soy un div dentro del footer</div>
+    </footer>
+
+
+    
+</body>
+</html>

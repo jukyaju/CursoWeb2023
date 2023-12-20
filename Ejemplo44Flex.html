@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+    <style>
+        img{
+            width:25%;
+        }
+        aside{
+            background-color: orange;
+            height: 80px;
+        }
+        main{
+            display: flex;
+            justify-content: space-evenly;
+            border:2px solid gray;
+        }
+        h1{
+            background-color: aqua;
+            margin:0;
+        }
+        .m1{
+            align-items: flex-start;
+        }
+        .m2{
+            align-items: flex-end;
+        }
+        .m3{
+            align-items: center;
+        }
+        .m4{
+            align-items: baseline;
+        }
+        .m5{
+            align-items: stretch;
+        }
+        .m5 aside{
+            height: auto;
+        }
+        .m6{
+            align-items: baseline;
+        }
+        .m6 img{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main class="m1">
+        <h1>align-item</h1>
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <aside>Soy un lateral</aside>
+    </main>
+    <main class="m2">
+        <h1>align-item</h1>
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <aside>Soy un lateral</aside>
+    </main>
+    <main class="m3">
+        <h1>align-item</h1>
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <aside>Soy un lateral</aside>
+    </main>
+    <main class="m4">
+        <h1>align-item</h1>
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <aside>Soy un lateral</aside>
+    </main>
+    <main class="m5">
+        <h1>align-item</h1>
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <aside>Soy un lateral</aside>
+    </main>
+    <main class="m6">
+        <h1>align-item</h1>
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <aside>Soy un lateral</aside>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet"> 
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Andika', sans-serif;
+        }
+
+        h1{
+            display: inline-block;
+            width:25%;
+            text-align: center;
+            padding: 25px;
+            box-sizing: border-box;
+            background-image: linear-gradient(to right,#7BD4FE,#3879AF);
+            margin:100px 35px;
+            border-radius: 10%;
+            border: 3px solid black;
+            box-shadow: 12px 4px grey;
+        }
+        img{
+            display:none;
+            width:33%;
+        }
+
+        h1:nth-child(1):hover ~ div > [alt*="natu"]{
+            background-image: linear-gradient(to right,#3879AF, #7BD4FE,#7BD4FE,#3879AF);
+            display:inline;
+        }
+        
+        h1:nth-child(2):hover ~ div > [alt*="per"]{
+            display:inline;
+        }
+
+        h1:nth-child(3):hover ~ div > [src*="id/237"]{
+            display:inline;
+        }
+        h1:nth-child(3):hover ~ div > img:nth-child(8), h1:nth-child(3):hover ~ div > img:last-child{
+            display:inline;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Naturaleza</h1>
+    <h1>Personas</h1>
+    <h1>Animales</h1>
+    <div>
+        <img src="https://picsum.photos/id/25/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/28/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/29/500/300" alt="imagen naturaleza">
+        <img src="https://picsum.photos/id/64/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/22/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/65/500/300" alt="imagen personas">
+        <img src="https://picsum.photos/id/237/500/300" >
+        <img src="https://picsum.photos/id/169/500/300" >
+        <img src="https://picsum.photos/id/200/500/300" >
+    </div>
+</body>
+</html>
