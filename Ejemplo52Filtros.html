@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        section, main{
+            padding: 30px;
+        }
+
+        img{
+            filter: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button onclick="grises()">Escala de grises</button>
+        <button onclick="desenfoque()">Blur</button>
+        <button onclick="antiguo()">Sepia</button>
+        <button onclick="opacidad()">Opacidad</button>
+        <button onclick="brillo()">Brillo</button>
+        <button onclick="contraste()">Contraste</button>
+        <button onclick="tonalidad()">Tonalidad</button>
+        <button onclick="invertir()">Invertir</button>
+        <button onclick="limpiar()">Limpiar</button>
+    </section>
+    <main>
+        <img src="imagen4.jpg" alt="">
+    </main>
+
+    <script>
+        var imagen = document.getElementsByTagName("img")[0]
+        function limpiar(){
+            
+            imagen.style.filter="none"
+        }
+        function grises(){
+            
+            if(imagen.style.filter == "none"){
+                imagen.style.filter="grayscale(1) "
+            }else {
+                imagen.style.filter+="grayscale(1) "
+            }
+        }
+        function desenfoque(){
+            if(imagen.style.filter == "none"){
+                imagen.style.filter="blur(3px) "
+            }else {
+                imagen.style.filter+="blur(3px) "
+            }
+         
+        }
+        function antiguo(){
+            if(imagen.style.filter == "none"){
+                imagen.style.filter="sepia(1) "
+            }else {
+                imagen.style.filter+="sepia(1) "
+            }
+            
+        }
+        function opacidad(){
+            if(imagen.style.filter == "none"){
+                imagen.style.filter="opacity(0.5) "
+            }else {
+                imagen.style.filter+="opacity(0.5) "
+            }
+        }
+        function brillo(){
+            if(imagen.style.filter == "none"){
+                imagen.style.filter="brightness(0.8) "
+            }else {
+                imagen.style.filter+="brightness(0.8) "
+            }
+            
+        }
+        function contraste(){
+            if(imagen.style.filter == "none"){
+                imagen.style.filter="contrast(0.5) "
+            }else {
+                imagen.style.filter+="contrast(0.5) "
+            }
+            
+        }
+        function tonalidad(){
+            if(imagen.style.filter == "none"){
+                imagen.style.filter="hue-rotate(-85deg) "
+            }else {
+                imagen.style.filter+="hue-rotate(-85deg) "
+            }
+            
+        }
+        function invertir(){if(imagen.style.filter == "none"){
+                imagen.style.filter="invert(1) "
+            }else {
+                imagen.style.filter+="invert(1) "
+            }
+           
+        }
+    </script>
+</body>
+</html>

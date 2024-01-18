@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            border:3px solid blue;
+            background-color: gray;
+            padding:15px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap:10px;
+        }
+        div{
+            padding:15px;
+            background-color: orange;
+            color:white;
+            text-align: center;
+        }
+
+       
+
+        @media only screen and (max-width:800px) {
+        main{ 
+            grid-template-columns: auto auto;
+        }
+       } 
+       @media only screen and (max-width:600px) {
+        main{ 
+            grid-template-columns: auto;
+        }
+       }
+
+       main div:nth-of-type(1){
+        grid-column-start: span 2;
+        /* grid-column-start: 1;
+        grid-column-end: 5; */
+        grid-row-start: span 2;
+       }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>F</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+        <div>K</div>
+        <div>Z</div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main:first-child{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            justify-content: start;
+            justify-content: end;
+            justify-content: center;
+            justify-content:space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            height: 50vh;
+            align-content: start;
+            align-content: end;
+            align-content:center;
+            align-content:space-around;
+            align-content:space-between;
+            align-content:stretch; /*default*/
+            align-content:space-evenly;
+            background-color: bisque;
+        }
+        main div{
+            background-color: orange;
+        }
+        main{
+            margin: 20px 0;
+            text-align: center;
+        }
+        main:nth-child(2), body>:nth-child(3){
+            display: inline-grid;
+            grid-template-columns: repeat(4, 50px);
+            gap:4px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </main>
+    <main>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </main>
+    <main>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </main>
+</body>
+</html>

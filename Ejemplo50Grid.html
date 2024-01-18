@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(3,100px);
+            gap:10px;
+            width:320px;
+            padding:10px;
+            margin: 50px auto;
+            color:white;
+            font-size: 3em;
+           
+        }  
+        div:nth-child(1){
+            border-radius: 0 0 18% 0;
+        }
+        div:nth-child(2){
+            border-radius: 0 0 18% 18%;
+        }
+        div:nth-child(3){
+            border-radius: 0 0 0 18%;
+        }
+        div:nth-child(4){
+            border-radius: 0 18% 18% 0;
+        }
+        div:nth-child(5){
+            border-radius: 18% 18% 18% 18%;
+        }
+        div:nth-child(6){
+            border-radius: 18% 0 0 18%;
+        }
+        div:nth-child(7){
+            border-radius: 0 18% 0 0;
+        }
+        div:nth-child(8){
+            border-radius: 18% 18% 0 0;
+        }
+        div:nth-child(9){
+            border-radius: 18% 0 0 0;
+        }
+        div{
+            border: 10px yellow solid;
+        }
+        main:nth-child(2) div{
+            border: 10px red solid;
+        }
+        main:nth-child(3) div{
+            border: 10px blue solid;
+        }
+        main:nth-child(2){
+            transform: skewY(22.5deg)
+        }
+        main:nth-child(3){
+            transform: skewY(-22.5deg) translate(340px,-248px)
+        }
+        main:nth-child(1){
+            transform: scale(1.42,0.574) rotate(45deg) translate(273px, 103px)
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </main>
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+</body>
+</html>
