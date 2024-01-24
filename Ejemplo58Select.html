@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+
+<body>
+
+    <h1>DATOS DE SEGURO DEL AUTOMÓVIL</h1>
+
+
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del vehículo a asegurar</legend>
+
+            <p>Inserte los datos de su vehículo:</p>
+            <p> <label for="marca">Marca</label>
+                <select name="marca" id="marca" required>
+                    <option value="" selected disabled>--Seleccione una opción--</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Seat">Seat</option>
+                    <option value="BMV">BMV</option>
+                    <option value="Citroen" >Citröen</option>
+                    <option value="Ford">Ford</option>
+                </select>
+            </p>
+        </fieldset>
+        <p><input type="reset" value="LIMPIAR"> <input type="submit" value="ENVIAR"></p>
+    </form>
+</body>
+
+</html>

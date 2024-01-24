@@ -1,0 +1,63 @@
+/*Por defecto Paradigma "Mobile First"*/
+
+/*Selectores para nuestra página para tamaño EXTRA SMALL*/
+
+body{
+    background-color: orange;
+    font-size:1em;
+    
+}
+img{
+    display:none;
+    width:80%;
+}
+
+/*Tamaño Small o superior*/
+@media only screen and (min-width: 540px) {
+    body{
+        /* background-color: blue; */
+    }
+    img{
+        
+    }
+}
+
+/*Tamaño Medium o superior o Landscape*/
+@media only screen and (min-width: 720px) {
+    body{
+       /*  background-color: green; */
+    }
+    img{
+        display:inline;
+    }
+}
+
+/*Tamaño Large o superior*/
+@media only screen and (min-width: 960px) {
+    body{
+        /* background-color: yellow; */
+        font-size:2em;
+    }
+}
+
+/*Tamaño Extra Large o superior*/
+@media only screen and (min-width: 1140px) {
+    body{
+       /*  background-color: white; */
+    }
+}
+
+/*Tamaño XXL*/
+@media only screen and (min-width: 1320px) {
+    body{
+        /*background-color: black;
+         color: white; */
+    }
+}
+
+/*Evitar que impriman el contenido de nuestra página*/
+@media print and (min-width:200px){
+    * {
+        display:none;
+    }
+}
